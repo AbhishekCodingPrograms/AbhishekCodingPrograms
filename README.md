@@ -5,14 +5,20 @@ I'm a **Software & AI/ML Developer** currently pursuing my **B.Tech in Computer 
 I enjoy building practical applications using **Computer Vision**, **Machine Learning**, and **full-stack web technologies**—from touchless gesture interfaces to predictive ML pipelines.
 
 <p>
-  <a href="mailto:abhishekmaurya2104567@gmail.com">
-    <img src="https://img.shields.io/badge/Email-abhishekmaurya2104567%40gmail.com-blue?style=flat&logo=gmail&logoColor=white" alt="Email" />
+  <a href="https://drive.google.com/file/d/1E0Qw9lOEp_9yv4byK2sD-d5JJ6pnGpgy/view?usp=sharing" target="_blank">
+    <img src="https://img.shields.io/badge/Resume-View%20CV-E05353?style=flat&logo=adobeacrobatreader&logoColor=white" alt="Resume" />
   </a>
   <a href="https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-Live%20Website-success?style=flat&logo=googlechrome&logoColor=white" alt="Portfolio" />
   </a>
+  <a href="https://www.linkedin.com/in/abhishek-maurya-ba08aa210/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Abhishek%20Maurya-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
   <a href="https://leetcode.com/u/AbhishekMaurya01/" target="_blank">
     <img src="https://img.shields.io/badge/LeetCode-AbhishekMaurya01-FFA116?style=flat&logo=leetcode&logoColor=white" alt="LeetCode" />
+  </a>
+  <a href="mailto:abhishekmaurya2104567@gmail.com">
+    <img src="https://img.shields.io/badge/Email-abhishekmaurya2104567%40gmail.com-blue?style=flat&logo=gmail&logoColor=white" alt="Email" />
   </a>
   <img src="https://img.shields.io/badge/Location-Ghaziabad%2C%20India-lightgrey?style=flat&logo=googlemaps&logoColor=red" alt="Location" />
 </p>
@@ -84,7 +90,9 @@ A recommendation system that suggests films using content-based cosine similarit
 
 If you'd like to collaborate on a project, discuss machine learning, or just say hello, feel free to reach out:
 
+- **Resume / CV**: [View Resume (Google Drive PDF)](https://drive.google.com/file/d/1E0Qw9lOEp_9yv4byK2sD-d5JJ6pnGpgy/view?usp=sharing)
 - **Email**: [abhishekmaurya2104567@gmail.com](mailto:abhishekmaurya2104567@gmail.com)
 - **Portfolio**: [abhishekmaurya_portfolio](https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/)
-- **GitHub**: [@AbhishekCodingPrograms](https://github.com/AbhishekCodingPrograms)
+- **LinkedIn**: [Abhishek Maurya](https://www.linkedin.com/in/abhishek-maurya-ba08aa210/)
 - **LeetCode**: [@AbhishekMaurya01](https://leetcode.com/u/AbhishekMaurya01/)
+- **GitHub**: [@AbhishekCodingPrograms](https://github.com/AbhishekCodingPrograms)
