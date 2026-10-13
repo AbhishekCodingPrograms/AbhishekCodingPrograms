@@ -7,9 +7,9 @@
 
   <br/><br/>
 
-  <!-- Dynamic Typing Headline (Optimized Width & Sizing) -->
+  <!-- Dynamic Typing Headline -->
   <a href="https://github.com/AbhishekCodingPrograms">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=38BDF8&center=true&vCenter=true&width=850&lines=AI+%26+Machine+Learning+Engineer;Computer+Vision+%26+Deep+Learning+Specialist;200%2B+DSA+Problems+Solved+(C%2B%2B+%2F+Java);Building+Production-Ready+Intelligent+Systems" alt="Typing SVG Banner" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=800&lines=AI+%26+Machine+Learning+Engineer;Computer+Vision+%26+Deep+Learning;200%2B+DSA+Problems+Solved;Building+High-Impact+AI+Systems" alt="Typing SVG Banner" />
   </a>
 
   <!-- Academic Credentials & Status Row -->
