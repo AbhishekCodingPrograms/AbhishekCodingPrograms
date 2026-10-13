@@ -7,20 +7,20 @@
 
   <br/><br/>
 
-  <!-- Dynamic Typing Headline -->
+  <!-- Dynamic Typing Headline (Optimized Width & Sizing) -->
   <a href="https://github.com/AbhishekCodingPrograms">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=780&lines=AI+%26+Machine+Learning+Engineer;Specializing+in+Computer+Vision+%26+Deep+Learning;200%2B+Data+Structures+%26+Algorithms+Solved;Building+Production-Ready+Intelligent+Systems" alt="Typing SVG Banner" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=38BDF8&center=true&vCenter=true&width=850&lines=AI+%26+Machine+Learning+Engineer;Computer+Vision+%26+Deep+Learning+Specialist;200%2B+DSA+Problems+Solved+(C%2B%2B+%2F+Java);Building+Production-Ready+Intelligent+Systems" alt="Typing SVG Banner" />
   </a>
 
-  <!-- Academic & Status Credentials -->
+  <!-- Academic Credentials & Status Row -->
   <p align="center">
-    <img src="https://img.shields.io/badge/Degree-B.Tech%20in%20AI%20%26%20ML-8b5cf6?style=for-the-badge&logo=google-scholar&logoColor=white" alt="B.Tech AI & ML" />
-    <img src="https://img.shields.io/badge/Institution-AKGEC%20(2023--2027)-0d9488?style=for-the-badge&logo=mortarboard&logoColor=white" alt="AKGEC Batch" />
-    <img src="https://img.shields.io/badge/Location-Ghaziabad%2C%20UP-ea580c?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location" />
-    <img src="https://img.shields.io/badge/Status-Open_For_Opportunities-10b981?style=for-the-badge&logo=target&logoColor=white" alt="Status" />
+    <img src="https://img.shields.io/badge/Degree-B.Tech%20in%20AI%20%26%20ML-8b5cf6?style=flat-square&logo=google-scholar&logoColor=white" alt="B.Tech AI & ML" />
+    <img src="https://img.shields.io/badge/Institution-AKGEC%20(2023--2027)-0d9488?style=flat-square&logo=mortarboard&logoColor=white" alt="AKGEC Batch" />
+    <img src="https://img.shields.io/badge/Location-Ghaziabad%2C%20UP-ea580c?style=flat-square&logo=googlemaps&logoColor=white" alt="Location" />
+    <img src="https://img.shields.io/badge/Status-Open_For_Opportunities-10b981?style=flat-square&logo=target&logoColor=white" alt="Status" />
   </p>
 
-  <!-- Recruiter Direct Connect Bar -->
+  <!-- Recruiter Direct Action Links -->
   <p align="center">
     <a href="https://drive.google.com/file/d/1E0Qw9lOEp_9yv4byK2sD-d5JJ6pnGpgy/view?usp=sharing" target="_blank">
       <img src="https://img.shields.io/badge/Resume-View_CV-1f2937?style=for-the-badge&logo=googledrive&logoColor=white" alt="Resume" />
