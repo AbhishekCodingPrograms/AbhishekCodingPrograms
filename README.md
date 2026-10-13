@@ -45,26 +45,37 @@
 
 ---
 
-## 👨‍💻 Executive Summary
+## Executive Summary
 
 Software Engineer specializing in **Artificial Intelligence, Machine Learning, and Computer Vision**. Currently pursuing a **Bachelor of Technology in Artificial Intelligence & Machine Learning (2023–2027)** at **Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad** with a cumulative **CGPA of 7.38 / 10**.
 
-- **Industry Internship Experience**: Former **Artificial Intelligence Intern at IBM Developer Skills Network**, where I developed a CNN image classifier achieving **92% validation accuracy** through data augmentation and hyperparameter tuning, regression-based salary forecasting models (+18% accuracy over baseline), and Amazon review sentiment analyzers with TF-IDF & Naive Bayes (**88% accuracy**).
-- **Computer Vision & Kinematics**: Architected real-time human-computer interaction (HCI) and biomechanical posture analysis pipelines using MediaPipe (Hands & Pose), OpenCV, and custom kinematic angle calculations running under **sub-30ms latency**.
-- **Algorithmic Problem Solving**: Solved **200+ Data Structures & Algorithms problems** across LeetCode and GeeksforGeeks utilizing C++ and Java, with strong focus on arrays, dynamic programming, trees, and graphs.
-- **Full-Stack ML Engineering**: Engineered end-to-end data pipelines connecting machine learning inference models with modern web frameworks (Flask, FastAPI, React, RESTful APIs).
+- <img src="https://img.shields.io/badge/Industry_Experience-161b22?style=flat-square&logo=ibm&logoColor=38bdf8" alt="Experience" /> **IBM Developer Skills Network (AI Intern)**  
+  ▸ Developed a CNN image classifier achieving **92% validation accuracy** through data augmentation and hyperparameter tuning.  
+  ▸ Built predictive regression models (+18% accuracy over baseline) and Amazon review sentiment analyzers with TF-IDF & Naive Bayes (**88% accuracy**).
+
+- <img src="https://img.shields.io/badge/Computer_Vision-161b22?style=flat-square&logo=opencv&logoColor=38bdf8" alt="Vision" /> **Computer Vision & Kinematics**  
+  ▸ Architected real-time human-computer interaction (HCI) and biomechanical posture analysis pipelines using MediaPipe (Hands & Pose) and OpenCV.  
+  ▸ Implemented custom kinematic angle calculations and velocity smoothing heuristics running under **sub-30ms latency**.
+
+- <img src="https://img.shields.io/badge/Problem_Solving-161b22?style=flat-square&logo=leetcode&logoColor=ffa116" alt="DSA" /> **Algorithmic Problem Solving**  
+  ▸ Solved **200+ Data Structures & Algorithms problems** across LeetCode and GeeksforGeeks utilizing C++ and Java.  
+  ▸ Core focus on arrays, dynamic programming, binary trees, graphs, and system complexity optimization.
+
+- <img src="https://img.shields.io/badge/Full--Stack_ML-161b22?style=flat-square&logo=fastapi&logoColor=34d399" alt="Full-Stack" /> **Full-Stack ML Engineering**  
+  ▸ Engineered end-to-end data pipelines connecting machine learning inference models with modern web frameworks (Flask, FastAPI, React, RESTful APIs).  
+  ▸ Production-grade model packaging, inference latency benchmarking, and interactive UI integration.
 
 ---
 
-## 🛠️ Technical Arsenal & Competencies
+## Technical Competencies
 
 | Domain | Technologies, Frameworks & Tooling |
 | :--- | :--- |
-| **Programming Languages** | `Python` `C++` `Java` `JavaScript (ES6+)` `SQL` `HTML5` `CSS3` |
-| **Machine Learning & Deep Learning** | `Scikit-Learn` `PyTorch` `TensorFlow` `Pandas` `NumPy` `SciPy` |
-| **Computer Vision & NLP** | `OpenCV` `MediaPipe (Pose & Hands)` `NLTK` `TF-IDF` `VADER` |
-| **Backend & Web Frameworks** | `Flask` `FastAPI` `RESTful APIs` `React.js` `Node.js` |
-| **Databases & DevOps** | `MySQL` `PostgreSQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Linux` `VS Code` `Jupyter` |
+| <img src="https://img.shields.io/badge/-Languages-161b22?style=flat-square&logo=c%2B%2B&logoColor=38bdf8" /> | `Python` `C++` `Java` `JavaScript (ES6+)` `SQL` `HTML5` `CSS3` |
+| <img src="https://img.shields.io/badge/-ML_%26_DL-161b22?style=flat-square&logo=pytorch&logoColor=ee4c2c" /> | `Scikit-Learn` `PyTorch` `TensorFlow` `Pandas` `NumPy` `SciPy` |
+| <img src="https://img.shields.io/badge/-CV_%26_NLP-161b22?style=flat-square&logo=opencv&logoColor=38bdf8" /> | `OpenCV` `MediaPipe (Pose & Hands)` `NLTK` `TF-IDF` `VADER` |
+| <img src="https://img.shields.io/badge/-Backend_%26_Web-161b22?style=flat-square&logo=fastapi&logoColor=009688" /> | `Flask` `FastAPI` `RESTful APIs` `React.js` `Node.js` |
+| <img src="https://img.shields.io/badge/-Databases_%26_DevOps-161b22?style=flat-square&logo=git&logoColor=f05032" /> | `MySQL` `PostgreSQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Linux` `VS Code` `Jupyter` |
 
 <br/>
 
@@ -74,19 +85,19 @@ Software Engineer specializing in **Artificial Intelligence, Machine Learning, a
 
 ---
 
-## 🚀 Featured Engineering Projects
+## Featured Engineering Projects
 
 | Project | Architecture & Tech Stack | Key Impact & Capabilities |
 | :--- | :--- | :--- |
-| **[VisionMouse](https://github.com/AbhishekCodingPrograms/VisionMouse-AI-Powered-Gesture-Controlled-Virtual-Mouse)**<br/><sub>AI Gesture-Controlled Virtual Mouse</sub> | `Python` `OpenCV` `MediaPipe Hands` `PyAutoGUI`<br/>21-point hand landmark tracking pipeline with spatial smoothing heuristics and algorithmic velocity interpolation. | • Touchless left/right click, drag-and-drop, and scroll<br/>• **Sub-30ms latency** with zero cursor jitter<br/>• Full touchless human-computer interaction |
-| **[AIFit](https://github.com/AbhishekCodingPrograms/AI-Based-Smart-Fitness-and-Preventive-Healthcare-Web-Application-Using-Computer-Vision)**<br/><sub>Biomechanical Posture & Kinematics Analyzer</sub> | `MediaPipe Pose` `Scikit-Learn` `Flask` `React`<br/>Real-time vector angle calculations across anatomical joint vertices coupled with custom ML classification models. | • Automated rep counting for squats, push-ups, lunges<br/>• Sub-degree angular precision feedback<br/>• Real-time posture deviance warnings |
-| **[FreightRate Predictor](https://github.com/AbhishekCodingPrograms/FreightRate-Predictor-Machine-Learning-Based-Freight-Cost-Prediction)**<br/><sub>Logistics Shipping Cost Regression Pipeline</sub> | `Python` `Scikit-Learn` `Pandas` `NumPy` `Flask`<br/>End-to-end predictive regression model forecasting commercial freight tariffs with robust preprocessing & scaling. | • Benchmarked Linear Regression, Random Forest, GBDT<br/>• High prediction accuracy across cargo variables<br/>• Deployed interactive inference interface |
-| **[Movie Recommender](https://github.com/AbhishekCodingPrograms/Movie-Recommender-with-Sentiment-Intelligence)**<br/><sub>Sentiment-Aware Hybrid Recommendation Engine</sub> | `Python` `NLP` `TF-IDF` `NLTK` `Scikit-Learn` `Flask`<br/>Dual-filtering pipeline combining metadata cosine similarity on 5,000+ films with VADER review sentiment analysis. | • **88% sentiment classification accuracy** on 10,000+ reviews<br/>• **Sub-1.5s query response** with explainable metrics<br/>• Filters against negative sentiment review bias |
-| **[IPL Analytics Dashboard](https://github.com/AbhishekCodingPrograms/IPL-Data-Analysis-Dashboard)**<br/><sub>17 Seasons Sports Analytics & Intelligence</sub> | `Python` `Pandas` `NumPy` `Matplotlib` `Seaborn`<br/>Processed and structured 17 IPL tournament seasons (2008–2025) covering 1,000+ matches and 800+ players. | • 10+ KPIs: strike rates, economy, toss influence<br/>• Generated data-driven team comparative insights<br/>• Automated visual reporting workflows |
+| **[VisionMouse](https://github.com/AbhishekCodingPrograms/VisionMouse-AI-Powered-Gesture-Controlled-Virtual-Mouse)**<br/><sub>AI Gesture-Controlled Virtual Mouse</sub> | `Python` `OpenCV` `MediaPipe Hands` `PyAutoGUI`<br/>21-point hand landmark tracking pipeline with spatial smoothing heuristics and algorithmic velocity interpolation. | ▸ Touchless left/right click, drag-and-drop, and scroll<br/>▸ **Sub-30ms latency** with zero cursor jitter<br/>▸ Full touchless human-computer interaction |
+| **[AIFit](https://github.com/AbhishekCodingPrograms/AI-Based-Smart-Fitness-and-Preventive-Healthcare-Web-Application-Using-Computer-Vision)**<br/><sub>Biomechanical Posture & Kinematics Analyzer</sub> | `MediaPipe Pose` `Scikit-Learn` `Flask` `React`<br/>Real-time vector angle calculations across anatomical joint vertices coupled with custom ML classification models. | ▸ Automated rep counting for squats, push-ups, lunges<br/>▸ Sub-degree angular precision feedback<br/>▸ Real-time posture deviance warnings |
+| **[FreightRate Predictor](https://github.com/AbhishekCodingPrograms/FreightRate-Predictor-Machine-Learning-Based-Freight-Cost-Prediction)**<br/><sub>Logistics Shipping Cost Regression Pipeline</sub> | `Python` `Scikit-Learn` `Pandas` `NumPy` `Flask`<br/>End-to-end predictive regression model forecasting commercial freight tariffs with robust preprocessing & scaling. | ▸ Benchmarked Linear Regression, Random Forest, GBDT<br/>▸ High prediction accuracy across cargo variables<br/>▸ Deployed interactive inference interface |
+| **[Movie Recommender](https://github.com/AbhishekCodingPrograms/Movie-Recommender-with-Sentiment-Intelligence)**<br/><sub>Sentiment-Aware Hybrid Recommendation Engine</sub> | `Python` `NLP` `TF-IDF` `NLTK` `Scikit-Learn` `Flask`<br/>Dual-filtering pipeline combining metadata cosine similarity on 5,000+ films with VADER review sentiment analysis. | ▸ **88% sentiment classification accuracy** on 10,000+ reviews<br/>▸ **Sub-1.5s query response** with explainable metrics<br/>▸ Filters against negative sentiment review bias |
+| **[IPL Analytics Dashboard](https://github.com/AbhishekCodingPrograms/IPL-Data-Analysis-Dashboard)**<br/><sub>17 Seasons Sports Analytics & Intelligence</sub> | `Python` `Pandas` `NumPy` `Matplotlib` `Seaborn`<br/>Processed and structured 17 IPL tournament seasons (2008–2025) covering 1,000+ matches and 800+ players. | ▸ 10+ KPIs: strike rates, economy, toss influence<br/>▸ Generated data-driven team comparative insights<br/>▸ Automated visual reporting workflows |
 
 ---
 
-## 📊 Live GitHub Activity & Analytics
+## GitHub Activity & Analytics
 
 <table align="center" width="100%" border="0">
   <tr>
@@ -107,7 +118,7 @@ Software Engineer specializing in **Artificial Intelligence, Machine Learning, a
 
 <div align="center">
 
-  <h3>🤝 Let's Connect & Collaborate</h3>
+  <h3>Let's Connect & Collaborate</h3>
   <p>Open for <b>Software Engineering</b>, <b>Artificial Intelligence</b>, and <b>Machine Learning</b> roles & internships.</p>
 
   <p>
