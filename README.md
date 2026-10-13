@@ -1,7 +1,7 @@
 # Abhishek Maurya
 **Software Engineer | Machine Learning & Computer Vision Specialist**
 
-B.Tech in Computer Science and Engineering (Artificial Intelligence & Machine Learning) at Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad (2022–2026). Specializing in computer vision pipelines, deep learning architectures, and scalable full-stack software integration.
+B.Tech in Computer Science and Engineering (Artificial Intelligence & Machine Learning) at Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad (2023–2027). Specializing in computer vision pipelines, deep learning architectures, and scalable full-stack software integration.
 
 <p>
   <a href="https://drive.google.com/file/d/1E0Qw9lOEp_9yv4byK2sD-d5JJ6pnGpgy/view?usp=sharing" target="_blank">
@@ -25,7 +25,7 @@ B.Tech in Computer Science and Engineering (Artificial Intelligence & Machine Le
 
 ## Professional Overview
 
-- **Education**: Bachelor of Technology, Computer Science and Engineering (AI & ML) — Ajay Kumar Garg Engineering College, Ghaziabad (2022 – 2026)
+- **Education**: Bachelor of Technology, Computer Science and Engineering (AI & ML) — Ajay Kumar Garg Engineering College, Ghaziabad (2023 – 2027)
 - **Primary Focus**: Computer Vision systems, Deep Learning kinematics, and real-time inference pipelines
 - **Problem Solving**: 200+ Data Structures & Algorithms problems solved on LeetCode across Arrays, Trees, Dynamic Programming, and Graph theory
 - **Industry Experience**: Former Artificial Intelligence Intern at IBM Developer Skills Network (developed CNN image classifiers achieving 92% validation accuracy)
