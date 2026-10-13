@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Preview — AbhishekCodingPrograms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --bg-canvas: #0d1117;
+      --bg-subtle: #161b22;
+      --bg-card: #21262d;
+      --border-color: #30363d;
+      --border-subtle: #21262d;
+      --text-main: #f0f6fc;
+      --text-muted: #8b949e;
+      --text-link: #58a6ff;
+      --accent-cyan: #00f5d4;
+      --accent-blue: #00bbf9;
+      --accent-purple: #9b5de5;
+      --btn-bg: #21262d;
+      --btn-hover: #30363d;
+      --header-bg: #010409;
+      --badge-bg: #1f2937;
+    }
+
+    [data-theme="light"] {
+      --bg-canvas: #ffffff;
+      --bg-subtle: #f6f8fa;
+      --bg-card: #f6f8fa;
+      --border-color: #d0d7de;
+      --border-subtle: #eaeef2;
+      --text-main: #1f2328;
+      --text-muted: #656d76;
+      --text-link: #0969da;
+      --accent-cyan: #00a896;
+      --accent-blue: #0284c7;
+      --accent-purple: #7c3aed;
+      --btn-bg: #f3f4f6;
+      --btn-hover: #e5e7eb;
+      --header-bg: #24292f;
+      --badge-bg: #f3f4f6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      line-height: 1.5;
+      min-height: 100vh;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    /* Top Control Bar */
+    .top-toolbar {
+      background: linear-gradient(90deg, #111827 0%, #1e1b4b 100%);
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .toolbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: -0.2px;
+    }
+
+    .toolbar-brand .badge {
+      background: linear-gradient(135deg, #00f5d4, #00bbf9);
+      color: #000;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      color: #ffffff;
+      border: none;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+    }
+
+    .btn-primary:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* GitHub Global Header Mock */
+    .gh-header {
+      background-color: var(--header-bg);
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--border-color);
+      color: #fff;
+    }
+
+    .gh-header .logo {
+      font-size: 32px;
+      color: #fff;
+    }
+
+    .gh-header-search {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      padding: 6px 12px;
+      color: #fff;
+      font-size: 13px;
+      width: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .gh-header-search kbd {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+    }
+
+    /* GitHub Profile Layout */
+    .profile-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 20px;
+      display: grid;
+      grid-template-columns: 296px 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .profile-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Left Sidebar */
+    .sidebar {
+      position: sticky;
+      top: 80px;
+      align-self: start;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .avatar-img {
+      width: 100%;
+      border-radius: 50%;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .user-status {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .user-names {
+      margin-bottom: 16px;
+    }
+
+    .user-fullname {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.25;
+    }
+
+    .user-handle {
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--text-muted);
+    }
+
+    .user-bio {
+      font-size: 14px;
+      color: var(--text-main);
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+
+    .follow-btn {
+      width: 100%;
+      padding: 8px;
+      background: var(--btn-bg);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+
+    .user-meta-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text-main);
+    }
+
+    .user-meta-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-meta-list i {
+      width: 16px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .user-meta-list a {
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .user-meta-list a:hover {
+      color: var(--text-link);
+      text-decoration: underline;
+    }
+
+    /* Main Profile Body */
+    .main-content {
+      min-width: 0;
+    }
+
+    /* Nav Tabs */
+    .nav-tabs {
+      display: flex;
+      gap: 16px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+      overflow-x: auto;
+    }
+
+    .nav-tab-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-decoration: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .nav-tab-item.active {
+      font-weight: 600;
+      color: var(--text-main);
+      border-bottom: 2px solid #f78166;
+      border-radius: 0;
+    }
+
+    .tab-counter {
+      background: var(--border-color);
+      padding: 1px 6px;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+
+    /* Profile README Container (Mocking GitHub Secret Repo Box) */
+    .readme-card {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background: var(--bg-canvas);
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .readme-header {
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .readme-header .file-path {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .readme-header .secret-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      background: rgba(155, 93, 229, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(155, 93, 229, 0.3);
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    .readme-body {
+      padding: 32px 36px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .readme-body {
+        padding: 18px 16px;
+      }
+    }
+
+    /* README Rendered Styling */
+    .readme-body h1, .readme-body h2, .readme-body h3 {
+      color: var(--text-main);
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .readme-body h3 {
+      font-size: 18px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 8px;
+    }
+
+    .readme-body p {
+      margin-bottom: 16px;
+      color: var(--text-main);
+    }
+
+    .readme-body hr {
+      border: none;
+      height: 1px;
+      background-color: var(--border-color);
+      margin: 28px 0;
+    }
+
+    .readme-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .readme-body code {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
+      font-size: 12.5px;
+    }
+
+    .readme-body pre {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    .readme-body pre code {
+      background: transparent;
+      border: none;
+      padding: 0;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #58a6ff;
+    }
+
+    .readme-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+    }
+
+    .readme-body table th, .readme-body table td {
+      border: 1px solid var(--border-color);
+      padding: 12px 14px;
+      text-align: left;
+    }
+
+    .readme-body table th {
+      background-color: var(--bg-subtle);
+      font-weight: 600;
+    }
+
+    .readme-body table td {
+      background-color: var(--bg-canvas);
+    }
+
+    .readme-body ul {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    .readme-body li {
+      margin-bottom: 8px;
+    }
+
+    /* Modal / Setup Drawer */
+    .setup-drawer {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 24px;
+    }
+
+    .setup-drawer h4 {
+      font-size: 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-cyan);
+    }
+
+    .cmd-box {
+      background: var(--bg-canvas);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 12px 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: #38bdf8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0 16px 0;
+      overflow-x: auto;
+    }
+
+    .copy-cmd-btn {
+      background: var(--btn-bg);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .copy-cmd-btn:hover {
+      background: var(--btn-hover);
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #10b981;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 1000;
+      animation: slideIn 0.2s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Toolbar -->
+  <div class="top-toolbar">
+    <div class="toolbar-brand">
+      <i class="fa-brands fa-github fa-lg"></i>
+      <span>AbhishekCodingPrograms</span>
+      <span class="badge">Secret Profile README</span>
+    </div>
+    <div class="toolbar-actions">
+      <button class="btn btn-secondary" id="themeToggleBtn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i> Light Mode
+      </button>
+      <button class="btn btn-secondary" onclick="switchBanner()">
+        <i class="fa-solid fa-image"></i> Swap Banner
+      </button>
+      <button class="btn btn-primary" onclick="copyReadmeMarkdown()">
+        <i class="fa-solid fa-copy"></i> Copy README Markdown
+      </button>
+    </div>
+  </div>
+
+  <!-- Mock GitHub Header -->
+  <div class="gh-header">
+    <i class="fa-brands fa-github logo"></i>
+    <div class="gh-header-search">
+      <span><i class="fa-solid fa-magnifying-glass"></i> Search or jump to...</span>
+      <kbd>/</kbd>
+    </div>
+    <span style="font-size: 14px; font-weight: 500; margin-left: 12px;">Pull requests</span>
+    <span style="font-size: 14px; font-weight: 500; margin-left: 12px;">Issues</span>
+    <span style="font-size: 14px; font-weight: 500; margin-left: 12px;">Marketplace</span>
+    <span style="font-size: 14px; font-weight: 500; margin-left: 12px;">Explore</span>
+  </div>
+
+  <!-- Profile Layout Container -->
+  <div class="profile-container">
+
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="avatar-wrapper">
+        <img src="https://avatars.githubusercontent.com/u/181489313?v=4" alt="Abhishek Maurya" class="avatar-img" />
+        <div class="user-status" title="Status: Focusing">🎯</div>
+      </div>
+
+      <div class="user-names">
+        <h1 class="user-fullname">Abhishek Maurya</h1>
+        <h2 class="user-handle">AbhishekCodingPrograms</h2>
+      </div>
+
+      <div class="user-bio">
+        B.Tech CSE (AI &amp; ML) student passionate about Artificial Intelligence, Machine Learning, and Computer Vision. I build data-driven intelligent applications.
+      </div>
+
+      <button class="follow-btn">Follow</button>
+
+      <ul class="user-meta-list">
+        <li>
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>B.Tech AI &amp; ML · AKGEC</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Azamgarh / Ghaziabad, UP, India</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:abhishekmaurya2104567@gmail.com">abhishekmaurya2104567@gmail.com</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-globe"></i>
+          <a href="https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/" target="_blank">abhishekmaurya_portfolio</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-hackerrank"></i>
+          <a href="https://www.hackerrank.com/profile/AbhishekCodingPrograms" target="_blank">HackerRank Profile</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Right Content -->
+    <main class="main-content">
+
+      <!-- Navigation Tabs -->
+      <div class="nav-tabs">
+        <div class="nav-tab-item active">
+          <i class="fa-solid fa-book-open"></i> Overview
+        </div>
+        <div class="nav-tab-item">
+          <i class="fa-solid fa-boxes-stacked"></i> Repositories
+          <span class="tab-counter">26</span>
+        </div>
+        <div class="nav-tab-item">
+          <i class="fa-solid fa-table"></i> Projects
+        </div>
+        <div class="nav-tab-item">
+          <i class="fa-solid fa-box-open"></i> Packages
+        </div>
+        <div class="nav-tab-item">
+          <i class="fa-solid fa-star"></i> Stars
+        </div>
+      </div>
+
+      <!-- Secret Repository Profile Card -->
+      <div class="readme-card">
+        <div class="readme-header">
+          <div class="file-path">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>AbhishekCodingPrograms / README.md</span>
+          </div>
+          <div class="secret-badge">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Special Repository
+          </div>
+        </div>
+
+        <div class="readme-body" id="readmeContent">
+
+          <!-- Center Banner & Typing SVG -->
+          <div align="center">
+            <a href="https://github.com/AbhishekCodingPrograms">
+              <img id="mainHeroBanner" src="./assets/banner.jpg" alt="Abhishek Maurya Banner" style="width: 100%; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);" />
+            </a>
+
+            <!-- Dynamic Typing SVG Header -->
+            <a href="https://github.com/AbhishekCodingPrograms">
+              <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00F5D4&center=true&vCenter=true&width=750&lines=%E2%9A%A1+Hi%2C+I'm+Abhishek+Maurya+%F0%9F%91%8B;%F0%9F%A7%A0+AI+%26+Machine+Learning+Engineer;%F0%9F%91%81%EF%B8%8F+Computer+Vision+%26+Deep+Learning+Specialist;%F0%9F%9A%80+Turning+Data+into+Intelligent+Real-World+Impact" alt="Typing SVG Banner" style="max-width: 100%; margin-bottom: 12px;" />
+            </a>
+
+            <!-- Capsule Metrics -->
+            <p align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 12px 0;">
+              <img src="https://komarev.com/ghpvc/?username=AbhishekCodingPrograms&label=PROFILE+VIEWS&style=for-the-badge&color=00bbf9" alt="Profile Views" />
+              <img src="https://img.shields.io/badge/DEGREE-B.Tech%20CSE%20(AI%20%26%20ML)-9b5de5?style=for-the-badge&logo=google-scholar&logoColor=white" alt="B.Tech AI & ML" />
+              <img src="https://img.shields.io/badge/INSTITUTION-AKGEC-00f5d4?style=for-the-badge&logo=mortarboard&logoColor=0d1117" alt="AKGEC" />
+              <img src="https://img.shields.io/badge/LOCATION-INDIA-ff006e?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location" />
+            </p>
+
+            <!-- Social Links -->
+            <p align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 12px 0 20px 0;">
+              <a href="mailto:abhishekmaurya2104567@gmail.com" target="_blank">
+                <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+              </a>
+              <a href="https://github.com/AbhishekCodingPrograms" target="_blank">
+                <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+              </a>
+              <a href="https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/" target="_blank">
+                <img src="https://img.shields.io/badge/Portfolio-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
+              </a>
+              <a href="https://www.hackerrank.com/profile/AbhishekCodingPrograms" target="_blank">
+                <img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black" alt="HackerRank" />
+              </a>
+            </p>
+          </div>
+
+          <hr/>
+
+          <!-- About Me -->
+          <h3>🚀 About Me</h3>
+          <pre><code>name: Abhishek Maurya
+role: Artificial Intelligence &amp; Machine Learning Engineer
+education: B.Tech in CSE (Artificial Intelligence &amp; Machine Learning) @ AKGEC
+focus: Computer Vision, Deep Learning, Kinematics AI, NLP Pipelines
+dsa_problems_solved: 200+
+status: Open for SDE / AI / ML Engineering Roles &amp; High-Impact Collaborations
+philosophy: "Architecting intelligent systems that perceive, predict, and empower."</code></pre>
+
+          <ul>
+            <li>🔭 <b>Currently Building</b>: <b>AIFit</b> — A real-time kinematic posture analysis &amp; form-correction engine powered by MediaPipe and custom ML classifiers.</li>
+            <li>🖐️ <b>Recent Innovation</b>: <b>VisionMouse</b> — An AI-driven touchless virtual mouse allowing computer control through high-precision hand gesture landmarks.</li>
+            <li>🧠 <b>Research &amp; Core Focus</b>: Deep Convolutional Neural Networks (CNNs), Kinematic Landmark Topology, Natural Language Sentiment Analysis, and End-to-End Machine Learning Deployment.</li>
+            <li>⚡ <b>Competitive Problem Solving</b>: Solved <b>200+ Data Structures &amp; Algorithms</b> problems strengthening algorithmic efficiency and system design.</li>
+            <li>🎯 <b>What I Seek</b>: Building cutting-edge AI software products, collaborating on open-source repositories, and driving data-driven innovation.</li>
+          </ul>
+
+          <hr/>
+
+          <!-- Tech Stack -->
+          <h3>🛠️ Tech Stack &amp; Capabilities</h3>
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 25%;">Domain</th>
+                <th>Technologies &amp; Frameworks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Languages</b></td>
+                <td>
+                  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+                  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
+                  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+                  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+                  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+                  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+                  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+                </td>
+              </tr>
+              <tr>
+                <td><b>AI / ML &amp; Deep Learning</b></td>
+                <td>
+                  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+                  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
+                  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
+                  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" />
+                  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
+                  <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" />
+                </td>
+              </tr>
+              <tr>
+                <td><b>Computer Vision &amp; NLP</b></td>
+                <td>
+                  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" />
+                  <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=google&logoColor=white" />
+                  <img src="https://img.shields.io/badge/NLTK-3776AB?style=flat-square&logo=python&logoColor=white" />
+                  <img src="https://img.shields.io/badge/Naive%20Bayes-6366F1?style=flat-square&logo=databricks&logoColor=white" />
+                  <img src="https://img.shields.io/badge/TF--IDF-0EA5E9?style=flat-square&logo=apachespark&logoColor=white" />
+                </td>
+              </tr>
+              <tr>
+                <td><b>Data Viz &amp; Analytics</b></td>
+                <td>
+                  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white" />
+                  <img src="https://img.shields.io/badge/Seaborn-388E3C?style=flat-square&logo=python&logoColor=white" />
+                  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white" />
+                </td>
+              </tr>
+              <tr>
+                <td><b>Backend &amp; Full-Stack</b></td>
+                <td>
+                  <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
+                  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+                  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+                  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" />
+                  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+                </td>
+              </tr>
+              <tr>
+                <td><b>DevOps, DB &amp; Tools</b></td>
+                <td>
+                  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+                  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+                  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+                  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+                  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" />
+                  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr/>
+
+          <!-- Featured Projects -->
+          <h3>⭐ Featured Projects</h3>
+          <table>
+            <tr>
+              <td width="50%" valign="top">
+                <h4>🖐️ VisionMouse — AI Gesture Virtual Mouse</h4>
+                <p>
+                  <img src="https://img.shields.io/badge/Computer_Vision-MediaPipe-00f5d4?style=flat-square" />
+                  <img src="https://img.shields.io/badge/Core-OpenCV_%7C_Python-00bbf9?style=flat-square" />
+                </p>
+                <p style="font-size: 13.5px; color: var(--text-muted);">
+                  A touchless Human-Computer Interaction solution translating hand landmarks into fluid cursor control and click actions.
+                </p>
+                <a href="https://github.com/AbhishekCodingPrograms/VisionMouse-AI-Powered-Gesture-Controlled-Virtual-Mouse" target="_blank" style="color: var(--text-link); font-weight: 600;">View Repository ➔</a>
+              </td>
+              <td width="50%" valign="top">
+                <h4>🏋️‍♂️ AIFit — Smart Fitness &amp; Kinematics Corrector</h4>
+                <p>
+                  <img src="https://img.shields.io/badge/Biomechanics-Kinematic_Pose-9b5de5?style=flat-square" />
+                  <img src="https://img.shields.io/badge/Stack-Flask_%7C_React_%7C_ML-f15bb5?style=flat-square" />
+                </p>
+                <p style="font-size: 13.5px; color: var(--text-muted);">
+                  Real-time posture classification engine analyzing 5 anatomical angles with scikit-learn models and live repetition tracking.
+                </p>
+                <a href="https://github.com/AbhishekCodingPrograms/AI-Based-Smart-Fitness-and-Preventive-Healthcare-Web-Application-Using-Computer-Vision" target="_blank" style="color: var(--text-link); font-weight: 600;">View Repository ➔</a>
+              </td>
+            </tr>
+            <tr>
+              <td width="50%" valign="top">
+                <h4>🚢 FreightRate Predictor — Cost Forecasting</h4>
+                <p>
+                  <img src="https://img.shields.io/badge/Machine_Learning-Regression-3b82f6?style=flat-square" />
+                  <img src="https://img.shields.io/badge/Pipelines-Scikit--Learn-10b981?style=flat-square" />
+                </p>
+                <p style="font-size: 13.5px; color: var(--text-muted);">
+                  Machine learning predictive regression pipeline forecasting freight logistics prices with robust feature engineering.
+                </p>
+                <a href="https://github.com/AbhishekCodingPrograms/FreightRate-Predictor-Machine-Learning-Based-Freight-Cost-Prediction" target="_blank" style="color: var(--text-link); font-weight: 600;">View Repository ➔</a>
+              </td>
+              <td width="50%" valign="top">
+                <h4>🎬 Sentiment-Aware Movie Recommender</h4>
+                <p>
+                  <img src="https://img.shields.io/badge/NLP-Sentiment_Analysis-f59e0b?style=flat-square" />
+                  <img src="https://img.shields.io/badge/Engine-Cosine_Similarity-ec4899?style=flat-square" />
+                </p>
+                <p style="font-size: 13.5px; color: var(--text-muted);">
+                  Content-based recommender combining TF-IDF cosine similarities with sentiment polarity analysis of reviews.
+                </p>
+                <a href="https://github.com/AbhishekCodingPrograms/Movie-Recommender-with-Sentiment-Intelligence" target="_blank" style="color: var(--text-link); font-weight: 600;">View Repository ➔</a>
+              </td>
+            </tr>
+          </table>
+
+          <hr/>
+
+          <!-- Live GitHub Stats -->
+          <h3>📊 Live GitHub Activity &amp; Metrics</h3>
+          <div align="center">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 16px;">
+              <img src="https://github-readme-stats.vercel.app/api?username=AbhishekCodingPrograms&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f5d4&icon_color=00bbf9&text_color=c9d1d9&count_private=true&include_all_commits=true" alt="Abhishek's GitHub Stats" style="max-width: 48%; min-width: 320px;" />
+              <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhishekCodingPrograms&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f5d4&text_color=c9d1d9" alt="Top Languages" style="max-width: 48%; min-width: 320px;" />
+            </div>
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=AbhishekCodingPrograms&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5D4&fire=00BBF9&currStreakLabel=00F5D4" alt="GitHub Streak" style="width: 100%; max-width: 800px;" />
+          </div>
+
+          <hr/>
+
+          <!-- Connect Footer -->
+          <div align="center" style="margin-top: 24px;">
+            <h3>🤝 Let's Connect &amp; Collaborate!</h3>
+            <p style="color: var(--text-muted); margin-bottom: 16px;">
+              Open to conversations on Artificial Intelligence, Machine Learning, Open-Source, and Software Engineering roles.
+            </p>
+            <p>
+              <a href="mailto:abhishekmaurya2104567@gmail.com">
+                <img src="https://img.shields.io/badge/Email-abhishekmaurya2104567%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+              </a>
+              &nbsp;
+              <a href="https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/">
+                <img src="https://img.shields.io/badge/Personal_Portfolio-Visit_Site-00f5d4?style=for-the-badge&logo=googlechrome&logoColor=0d1117" />
+              </a>
+              &nbsp;
+              <a href="https://github.com/AbhishekCodingPrograms">
+                <img src="https://img.shields.io/badge/GitHub-Follow_%40AbhishekCodingPrograms-181717?style=for-the-badge&logo=github&logoColor=white" />
+              </a>
+            </p>
+            <br/>
+            <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,11,16,21&height=80&section=footer" style="width: 100%; border-radius: 8px;" />
+            <p style="font-size: 13px; color: var(--text-muted); margin-top: 12px;">
+              Crafted with passion, neural networks &amp; code by <b>Abhishek Maurya</b> 🚀
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Quick Deployment Guide Drawer -->
+      <div class="setup-drawer">
+        <h4><i class="fa-solid fa-rocket"></i> How to Publish This to Your GitHub Profile (3-Minute Setup)</h4>
+        <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 14px;">
+          GitHub has a special feature: when you create a public repository with the exact same name as your username (<strong>AbhishekCodingPrograms/AbhishekCodingPrograms</strong>), GitHub automatically displays its <code>README.md</code> on your profile page!
+        </p>
+
+        <div style="font-size: 13px; font-weight: 600; margin-bottom: 4px;">Step 1: Create the Secret Repository on GitHub</div>
+        <p style="font-size: 13px; color: var(--text-muted);">
+          Go to <a href="https://github.com/new" target="_blank" style="color: var(--text-link);">github.com/new</a>, name the repository <code>AbhishekCodingPrograms</code>, set it to <strong>Public</strong>, and check <i>"Add a README file"</i> (or leave empty).
+        </p>
+
+        <div style="font-size: 13px; font-weight: 600; margin-top: 14px; margin-bottom: 4px;">Step 2: Push These Files Using Terminal</div>
+        <div class="cmd-box">
+          <span id="cmdText">cd c:\Users\abhis\Downloads\AbhishekCodingPrograms
+git init
+git add .
+git commit -m "feat: design world-class GitHub profile README"
+git branch -M main
+git remote add origin https://github.com/AbhishekCodingPrograms/AbhishekCodingPrograms.git
+git push -u origin main</span>
+          <button class="copy-cmd-btn" onclick="copyCommands()"><i class="fa-solid fa-copy"></i> Copy</button>
+        </div>
+
+        <div style="font-size: 13px; font-weight: 600; margin-bottom: 4px;">Step 3: Refresh Your Profile!</div>
+        <p style="font-size: 13px; color: var(--text-muted);">
+          Visit <a href="https://github.com/AbhishekCodingPrograms" target="_blank" style="color: var(--text-link);">github.com/AbhishekCodingPrograms</a> and your profile is live with dynamic typing animation, custom banners, shields, and real-time live GitHub metrics!
+        </p>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <i class="fa-solid fa-check"></i> Copied to clipboard!
+  </div>
+
+  <script>
+    // Theme toggle
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      const newTheme = isDark ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      const btn = document.getElementById('themeToggleBtn');
+      btn.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i> Dark Mode' : '<i class="fa-solid fa-moon"></i> Light Mode';
+    }
+
+    // Banner switcher
+    let currentBanner = 0;
+    const banners = [
+      './assets/banner.jpg',
+      './assets/banner_alt.jpg',
+      './assets/header.svg'
+    ];
+    function switchBanner() {
+      currentBanner = (currentBanner + 1) % banners.length;
+      document.getElementById('mainHeroBanner').src = banners[currentBanner];
+      showToast('Swapped banner preview to: ' + banners[currentBanner].replace('./assets/', ''));
+    }
+
+    // Toast helper
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerHTML = '<i class="fa-solid fa-check"></i> ' + msg;
+      toast.style.display = 'block';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 2500);
+    }
+
+    // Copy commands
+    function copyCommands() {
+      const text = document.getElementById('cmdText').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('Commands copied to clipboard!');
+      });
+    }
+
+    // Copy full README.md content
+    function copyReadmeMarkdown() {
+      fetch('./README.md')
+        .then(res => res.text())
+        .then(text => {
+          navigator.clipboard.writeText(text).then(() => {
+            showToast('README.md markdown copied to clipboard!');
+          });
+        })
+        .catch(() => {
+          showToast('Please open README.md directly to copy.');
+        });
+    }
+  </script>
+</body>
+</html>
