@@ -11,8 +11,8 @@ I enjoy building practical applications using **Computer Vision**, **Machine Lea
   <a href="https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-Live%20Website-success?style=flat&logo=googlechrome&logoColor=white" alt="Portfolio" />
   </a>
-  <a href="https://www.hackerrank.com/profile/AbhishekCodingPrograms" target="_blank">
-    <img src="https://img.shields.io/badge/HackerRank-Profile-2EC866?style=flat&logo=hackerrank&logoColor=white" alt="HackerRank" />
+  <a href="https://leetcode.com/u/AbhishekMaurya01/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-AbhishekMaurya01-FFA116?style=flat&logo=leetcode&logoColor=white" alt="LeetCode" />
   </a>
   <img src="https://img.shields.io/badge/Location-Ghaziabad%2C%20India-lightgrey?style=flat&logo=googlemaps&logoColor=red" alt="Location" />
 </p>
@@ -22,7 +22,7 @@ I enjoy building practical applications using **Computer Vision**, **Machine Lea
 ### 📌 About Me
 
 - 🎓 **Education**: B.Tech in CSE (Artificial Intelligence & Machine Learning) @ AKGEC, 2022–2026
-- 💻 **Problem Solving**: Solved **200+ Data Structures & Algorithms** problems on platforms like LeetCode and HackerRank (primarily using C++ and Python)
+- 💻 **Problem Solving**: Solved **200+ Data Structures & Algorithms** problems on [LeetCode](https://leetcode.com/u/AbhishekMaurya01/) (primarily using C++ and Python)
 - 🔭 **Current Focus**: Working on real-time computer vision models with MediaPipe and integrating them into responsive web apps
 - 🌱 **Learning**: Advanced Deep Learning architectures, transformers, and scalable model deployment
 - 💬 **Ask me about**: Python, OpenCV, MediaPipe, Scikit-learn, Flask, and ML workflows
@@ -87,3 +87,4 @@ If you'd like to collaborate on a project, discuss machine learning, or just say
 - **Email**: [abhishekmaurya2104567@gmail.com](mailto:abhishekmaurya2104567@gmail.com)
 - **Portfolio**: [abhishekmaurya_portfolio](https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/)
 - **GitHub**: [@AbhishekCodingPrograms](https://github.com/AbhishekCodingPrograms)
+- **LeetCode**: [@AbhishekMaurya01](https://leetcode.com/u/AbhishekMaurya01/)
