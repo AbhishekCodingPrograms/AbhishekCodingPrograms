@@ -2,7 +2,7 @@
 
   <!-- Modern Waving Gradient Header -->
   <a href="https://github.com/AbhishekCodingPrograms">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,11,16,21&height=220&section=header&text=Abhishek%20Maurya&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=AI%20%26%20Machine%20Learning%20Engineer%20%E2%80%A2%20Computer%20Vision%20Specialist&descSize=18&descAlignY=60" width="100%" alt="Abhishek Maurya Header" />
+    <img src="./assets/header_wave.svg" alt="Abhishek Maurya — AI &amp; Machine Learning Engineer" width="100%" />
   </a>
 
   <!-- Dynamic Typing Headline -->
