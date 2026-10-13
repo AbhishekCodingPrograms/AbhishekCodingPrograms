@@ -1,15 +1,13 @@
 <div align="center">
 
-  <!-- Executive Hero Banner -->
+  <!-- Modern Waving Gradient Header -->
   <a href="https://github.com/AbhishekCodingPrograms">
-    <img src="./assets/banner.svg" alt="Abhishek Maurya — AI & Machine Learning Engineer" width="100%" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,11,16,21&height=220&section=header&text=Abhishek%20Maurya&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=AI%20%26%20Machine%20Learning%20Engineer%20%E2%80%A2%20Computer%20Vision%20Specialist&descSize=18&descAlignY=60" width="100%" alt="Abhishek Maurya Header" />
   </a>
-
-  <br/><br/>
 
   <!-- Dynamic Typing Headline -->
   <a href="https://github.com/AbhishekCodingPrograms">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=800&lines=AI+%26+Machine+Learning+Engineer;Computer+Vision+%26+Deep+Learning;200%2B+DSA+Problems+Solved;Building+High-Impact+AI+Systems" alt="Typing SVG Banner" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F5D4&center=true&vCenter=true&width=800&lines=AI+%26+Machine+Learning+Engineer;Computer+Vision+%26+Deep+Learning;200%2B+DSA+Problems+Solved;Building+High-Impact+AI+Systems" alt="Typing SVG Banner" />
   </a>
 
   <!-- Academic Credentials & Status Row -->
