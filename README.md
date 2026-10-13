@@ -2,7 +2,7 @@
 
   <!-- Modern Waving Gradient Header -->
   <a href="https://github.com/AbhishekCodingPrograms">
-    <img src="./assets/header_wave.svg" alt="Abhishek Maurya — AI &amp; Machine Learning Engineer" width="100%" />
+    <img src="./assets/header_wave_v2.svg" alt="Abhishek Maurya — AI &amp; Machine Learning Engineer" width="100%" />
   </a>
 
   <!-- Dynamic Typing Headline -->
