@@ -1,98 +1,97 @@
-# Hi, I'm Abhishek Maurya 👋
+# Abhishek Maurya
+**Software Engineer | Machine Learning & Computer Vision Specialist**
 
-I'm a **Software & AI/ML Developer** currently pursuing my **B.Tech in Computer Science & Engineering (AI & ML)** at **Ajay Kumar Garg Engineering College (AKGEC)**, Ghaziabad.
-
-I enjoy building practical applications using **Computer Vision**, **Machine Learning**, and **full-stack web technologies**—from touchless gesture interfaces to predictive ML pipelines.
+B.Tech in Computer Science and Engineering (Artificial Intelligence & Machine Learning) at Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad (2022–2026). Specializing in computer vision pipelines, deep learning architectures, and scalable full-stack software integration.
 
 <p>
   <a href="https://drive.google.com/file/d/1E0Qw9lOEp_9yv4byK2sD-d5JJ6pnGpgy/view?usp=sharing" target="_blank">
-    <img src="https://img.shields.io/badge/Resume-View%20CV-E05353?style=flat&logo=adobeacrobatreader&logoColor=white" alt="Resume" />
-  </a>
-  <a href="https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-Live%20Website-success?style=flat&logo=googlechrome&logoColor=white" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/Resume-View_CV-1f2937?style=flat-square&logo=googledrive&logoColor=white" alt="Resume" />
   </a>
   <a href="https://www.linkedin.com/in/abhishek-maurya-ba08aa210/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Abhishek%20Maurya-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-Abhishek_Maurya-0077b5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://leetcode.com/u/AbhishekMaurya01/" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-AbhishekMaurya01-FFA116?style=flat&logo=leetcode&logoColor=white" alt="LeetCode" />
+    <img src="https://img.shields.io/badge/LeetCode-200+_Solved-ffa116?style=flat-square&logo=leetcode&logoColor=white" alt="LeetCode" />
+  </a>
+  <a href="https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-Live_Site-0ea5e9?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio" />
   </a>
   <a href="mailto:abhishekmaurya2104567@gmail.com">
-    <img src="https://img.shields.io/badge/Email-abhishekmaurya2104567%40gmail.com-blue?style=flat&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-Contact_Me-ea4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <img src="https://img.shields.io/badge/Location-Ghaziabad%2C%20India-lightgrey?style=flat&logo=googlemaps&logoColor=red" alt="Location" />
 </p>
 
 ---
 
-### 📌 About Me
+## Professional Overview
 
-- 🎓 **Education**: B.Tech in CSE (Artificial Intelligence & Machine Learning) @ AKGEC, 2022–2026
-- 💻 **Problem Solving**: Solved **200+ Data Structures & Algorithms** problems on [LeetCode](https://leetcode.com/u/AbhishekMaurya01/) (primarily using C++ and Python)
-- 🔭 **Current Focus**: Working on real-time computer vision models with MediaPipe and integrating them into responsive web apps
-- 🌱 **Learning**: Advanced Deep Learning architectures, transformers, and scalable model deployment
-- 💬 **Ask me about**: Python, OpenCV, MediaPipe, Scikit-learn, Flask, and ML workflows
+- **Education**: Bachelor of Technology, Computer Science and Engineering (AI & ML) — Ajay Kumar Garg Engineering College, Ghaziabad (2022 – 2026)
+- **Primary Focus**: Computer Vision systems, Deep Learning kinematics, and real-time inference pipelines
+- **Problem Solving**: 200+ Data Structures & Algorithms problems solved on LeetCode across Arrays, Trees, Dynamic Programming, and Graph theory
+- **Industry Experience**: Former Artificial Intelligence Intern at IBM Developer Skills Network (developed CNN image classifiers achieving 92% validation accuracy)
 
 ---
 
-### 🛠️ Skills & Technologies
+## Technical Competencies
 
-- **Languages**: Python, C++, Java, JavaScript, SQL, HTML/CSS
-- **Machine Learning & Data Science**: Scikit-Learn, PyTorch, TensorFlow, Pandas, NumPy, SciPy
-- **Computer Vision & NLP**: OpenCV, MediaPipe, NLTK, TF-IDF
-- **Web & Backend**: Flask, FastAPI, React.js, Node.js, Express
-- **Databases & Tools**: MySQL, MongoDB, Git, GitHub, VS Code, Jupyter, Linux
+| Domain | Technologies & Frameworks |
+| :--- | :--- |
+| **Languages** | Python, C++, Java, JavaScript, SQL |
+| **Machine Learning & Deep Learning** | Scikit-Learn, PyTorch, TensorFlow, Pandas, NumPy, SciPy |
+| **Computer Vision & NLP** | OpenCV, MediaPipe Pose & Hands, NLTK, TF-IDF |
+| **Backend & Web Development** | Flask, FastAPI, RESTful APIs, React.js, Node.js, Express.js |
+| **Databases & Tooling** | MySQL, PostgreSQL, MongoDB, Git, GitHub Actions, Docker, Linux |
 
 <br/>
 
 <div align="left">
-  <img src="https://skillicons.dev/icons?i=python,cpp,java,pytorch,tensorflow,sklearn,opencv,flask,react,nodejs,git,mysql,mongodb&theme=dark" alt="Skills" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,java,pytorch,tensorflow,sklearn,opencv,flask,fastapi,react,nodejs,git,mysql,postgres,mongodb&theme=dark" alt="Technical Skills" />
 </div>
 
 ---
 
-### 🚀 Featured Projects
+## Featured Engineering Projects
 
-Here are a few projects I've built:
+### [VisionMouse — AI-Powered Gesture-Controlled Virtual Mouse](https://github.com/AbhishekCodingPrograms/VisionMouse-AI-Powered-Gesture-Controlled-Virtual-Mouse)
+A real-time, touchless human-computer interface that translates webcam video streams into jitter-free mouse operations through geometric landmark kinematics.
+- **Technologies**: Python, OpenCV, MediaPipe Hands, PyAutoGUI
+- **Architecture**: 21-point multi-coordinate hand tracking with spatial smoothing heuristics and algorithmic velocity interpolation.
+- **Key Features**: Touchless left/right click, coordinate tracking, drag-and-drop, and dynamic window scrolling with sub-30ms latency.
 
-#### 🖐️ [VisionMouse — Gesture-Controlled Virtual Mouse](https://github.com/AbhishekCodingPrograms/VisionMouse-AI-Powered-Gesture-Controlled-Virtual-Mouse)
-A touchless computer control system that tracks hand landmarks in real time through a webcam and translates gestures into cursor movements, left/right clicks, and scrolling.
-- **Tech Stack**: Python, OpenCV, MediaPipe, PyAutoGUI
-- **Key Feature**: Real-time 21-landmark hand tracking with smoothing heuristics to reduce jitter.
+### [AIFit — Biomechanical Posture & Form Analysis Engine](https://github.com/AbhishekCodingPrograms/AI-Based-Smart-Fitness-and-Preventive-Healthcare-Web-Application-Using-Computer-Vision)
+A preventive healthcare web application that leverages real-time computer vision to evaluate exercise biomechanics, count repetitions, and correct posture deviations.
+- **Technologies**: Python, MediaPipe Pose, Scikit-Learn, Flask, React
+- **Architecture**: Real-time vector angle calculations across anatomical joint vertices coupled with a machine learning classification model.
+- **Key Features**: Automated repetition counting for squats, push-ups, and lunges with sub-degree angular feedback.
 
-#### 🏋️‍♂️ [AIFit — Smart Fitness & Posture Analyzer](https://github.com/AbhishekCodingPrograms/AI-Based-Smart-Fitness-and-Preventive-Healthcare-Web-Application-Using-Computer-Vision)
-A web application that uses computer vision to track workout posture (squats, pushups, lunges) and provide real-time form correction feedback and repetition counts.
-- **Tech Stack**: Python, MediaPipe Pose, Scikit-Learn, Flask, React
-- **Key Feature**: Geometric angle calculations across joint landmarks with machine learning form classification.
+### [FreightRate Predictor — Machine Learning Shipping Cost Pipeline](https://github.com/AbhishekCodingPrograms/FreightRate-Predictor-Machine-Learning-Based-Freight-Cost-Prediction)
+An end-to-end regression model designed to forecast commercial shipping and freight tariffs using multivariate operational variables.
+- **Technologies**: Python, Scikit-Learn, Pandas, NumPy
+- **Architecture**: Robust data preprocessing, outlier elimination, feature scaling, and multi-regressor cross-validation.
+- **Key Features**: Benchmarked Linear Regression, Random Forest, and Gradient Boosting algorithms to achieve high prediction accuracy.
 
-#### 🚢 [FreightRate Predictor — Freight Cost Prediction](https://github.com/AbhishekCodingPrograms/FreightRate-Predictor-Machine-Learning-Based-Freight-Cost-Prediction)
-A machine learning regression pipeline designed to predict commercial freight costs based on distance, cargo weight, and historical shipping rates.
-- **Tech Stack**: Python, Scikit-Learn, Pandas, NumPy
-- **Key Feature**: Complete data preprocessing, feature engineering, and multi-model benchmarking.
-
-#### 🎬 [Movie Recommender with Sentiment Intelligence](https://github.com/AbhishekCodingPrograms/Movie-Recommender-with-Sentiment-Intelligence)
-A recommendation system that suggests films using content-based cosine similarity combined with sentiment analysis of user reviews to prioritize well-received titles.
-- **Tech Stack**: Python, NLP, TF-IDF, Pandas, Scikit-Learn
-- **Key Feature**: Dual-filtering approach blending genre/cast similarity with audience review sentiment.
+### [Movie Recommender with Sentiment Intelligence](https://github.com/AbhishekCodingPrograms/Movie-Recommender-with-Sentiment-Intelligence)
+A hybrid recommendation engine utilizing cosine similarity for content matching combined with NLP sentiment scoring of user reviews.
+- **Technologies**: Python, NLP, TF-IDF Vectorization, Scikit-Learn, Pandas
+- **Architecture**: Dual-filtering pipeline blending metadata cosine similarity with review sentiment polarization metrics.
+- **Key Features**: Accurately filters recommendations against low sentiment review distributions.
 
 ---
 
-### 📊 GitHub Activity
+## GitHub Statistics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AbhishekCodingPrograms&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" alt="Abhishek's GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AbhishekCodingPrograms&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" alt="GitHub Stats" width="48%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbhishekCodingPrograms&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="Top Languages" width="48%" />
 </div>
 
 ---
 
-### 📬 Connect With Me
+## Contact & Professional Links
 
-If you'd like to collaborate on a project, discuss machine learning, or just say hello, feel free to reach out:
-
-- **Resume / CV**: [View Resume (Google Drive PDF)](https://drive.google.com/file/d/1E0Qw9lOEp_9yv4byK2sD-d5JJ6pnGpgy/view?usp=sharing)
+- **Curriculum Vitae**: [Download / View Resume](https://drive.google.com/file/d/1E0Qw9lOEp_9yv4byK2sD-d5JJ6pnGpgy/view?usp=sharing)
+- **LinkedIn**: [linkedin.com/in/abhishek-maurya-ba08aa210](https://www.linkedin.com/in/abhishek-maurya-ba08aa210/)
+- **LeetCode**: [leetcode.com/u/AbhishekMaurya01](https://leetcode.com/u/AbhishekMaurya01/)
+- **Portfolio Website**: [abhishekcodingprograms.github.io/abhishekmaurya_portfolio](https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/)
 - **Email**: [abhishekmaurya2104567@gmail.com](mailto:abhishekmaurya2104567@gmail.com)
-- **Portfolio**: [abhishekmaurya_portfolio](https://abhishekcodingprograms.github.io/abhishekmaurya_portfolio/)
-- **LinkedIn**: [Abhishek Maurya](https://www.linkedin.com/in/abhishek-maurya-ba08aa210/)
-- **LeetCode**: [@AbhishekMaurya01](https://leetcode.com/u/AbhishekMaurya01/)
-- **GitHub**: [@AbhishekCodingPrograms](https://github.com/AbhishekCodingPrograms)
+- **GitHub**: [github.com/AbhishekCodingPrograms](https://github.com/AbhishekCodingPrograms)
